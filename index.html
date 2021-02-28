@@ -42,7 +42,21 @@
     {
         response.text().then(function(text)
         {
-            document.querySelector('#nav').innerHTML = text;
+            //<li><a href="#!html" onclick="fetchPage('html')">HTML</a></li>
+            
+            var tags = ''; //빈 태그들
+            var items = text.split(','); // ',' 를 기준으로 문자를 나눔
+            var i = 0;
+            while(i < items.length)
+            {
+              var item = items[i];
+              item = item.trim(); //공백을 지워주는 함수
+              var tag = '<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</li>' //글 목록 태그 생성
+              
+              tags = tags + tag;
+              i = i + 1;
+            }
+            document.querySelector('#nav').innerHTML = tags;
         })
     });
 

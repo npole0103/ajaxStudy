@@ -71,6 +71,10 @@ ex) aaa.html#hihi -> console.log(location.hash) 하면 콘솔값으로 #hihi 출
 
 `substr()` : 문자열 일부만 가져와주는 함수.
 
+`split()` : 원하는 문자열 기준으로 나눠주는 함수.
+
+`trim()` : 공백을 없애주는 함수.
+
 ## etc
 
 response 객체에서 status 값에 200은 정상적인 실행, 404는 파일을 찾을 수 없다는 것. 400은 잘못된 요청. 500은 서버 오류. [HTTP 상태 코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
