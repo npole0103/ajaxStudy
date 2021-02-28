@@ -62,6 +62,14 @@ fetch의 구체적 탐구
 
 ---
 
+## Init page setting
+
+html 태그에 있는 특정 아이디 값을 `URL#아이디명`으로 입력하면 스크롤이 특정 태그가 있는 곳으로 향한다. 이를 fragment identifier(부분 식별자)라고 부름.
+
+`location.hash` : 자바스크립트에서 현재 URL의 해쉬값을 반환해줌.
+ex) aaa.html#hihi -> console.log(location.hash) 하면 콘솔값으로 #hihi 출력됨.
+
+`substr()` : 문자열 일부만 가져와주는 함수.
 
 ## etc
 
