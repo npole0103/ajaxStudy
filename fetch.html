@@ -21,12 +21,13 @@
             })
         })
     */
-    function callbackme()
-    {
-        console.log('response end');
-    }
 
-    fetch('html').then(callbackme);
+    //Asynchronous
+    fetch('html').then(function(response)
+        {
+            console.log(response);
+        }
+    );
     console.log(1);
     ">
 </body>

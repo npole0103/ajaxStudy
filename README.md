@@ -17,6 +17,8 @@ Ajax란 JavaScript 라이브러리 중 하나이며 비동기식 자바스크립
 
 ## fetch
 
+then 안에 들어있는 function은 익명 함수
+
 ``` javascript
     fetch('css').then(function(response)
     {
@@ -39,6 +41,29 @@ then 안에 함수는 웹브라우저 응답이 끝나면 그제서야 실행됨
 
 절차적으로 실행 = Synchronous 동기적
 
+익명 함수
+``` javascript
+    function callbackme()
+    {
+        console.log('response end');
+    }
+
+    callbackme = function()
+    {
+        console.log('response end');
+    }
+```
+위 두 코드는 서로 문법적으로 같음.
+
+fetch의 구체적 탐구
+1. then과 함께 익명 함수로 호출
+2. 함수에 입력 값으로 response 객체를 주면서 실행시킴.
+3. response 객체는 다양한 값들을 받음. body, bodyUsed, headers, status 등등
+
 ## etc
+
+response 객체에서 status 값에 200은 정상적인 실행, 404는 파일을 찾을 수 없다는 것. 400은 잘못된 요청. 500은 서버 오류. [HTTP 상태 코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
+
+
 
 ---
