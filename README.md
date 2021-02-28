@@ -76,5 +76,6 @@ ex) aaa.html#hihi -> console.log(location.hash) 하면 콘솔값으로 #hihi 출
 response 객체에서 status 값에 200은 정상적인 실행, 404는 파일을 찾을 수 없다는 것. 400은 잘못된 요청. 500은 서버 오류. [HTTP 상태 코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
 
 
+최근엔 hash bang 기술 대신 pjax라는 기술을 쓴다.
 
 ---
