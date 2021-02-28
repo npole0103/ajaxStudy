@@ -15,6 +15,20 @@ Ajax란 JavaScript 라이브러리 중 하나이며 비동기식 자바스크립
 
 ---
 
+## fetch
+
+``` javascript
+    fetch('css').then(function(response)
+    {
+        response.text().then(function(text)
+        {
+            alert(text);
+        })
+    })
+
+```
+css란 파일 안에 있는 데이터를 서버를 통해 가져오는데 가져온 데이터는 text 변수에 저장되며 alter(text); 가 있는 부분에 있는 코드를 실행시킬 수 있다.
+
 ## etc
 
 ---
