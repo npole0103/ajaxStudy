@@ -13,15 +13,14 @@
   <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);
   ">
-  <ol>
-    <li><a href="#!html" onclick="fetchPage('html')">HTML</a></li>
-    <li><a href="#!css" onclick="fetchPage('css')">CSS</a></li>
-    <li><a href="#!javascript" onclick="fetchPage('javascript')">JavaScript</a></li>
+  <ol id='nav'>
+    
   </ol>
 
   <article></article>
 
   <script>
+    //내부 문서에 있는 값을 읽어와서 보여줌.
     function fetchPage(name) {
     fetch(name).then(function(response)
         {
@@ -32,11 +31,20 @@
         });
       }
 
-
-      if(location.hash) //URL에 해쉬값이 존재한다면
+      //URL에 해쉬값이 존재한다면
+      if(location.hash)
         fetchPage(location.hash.substr(2));
       else
         fetchPage('welcome');
+
+    //list에 있는 값을 읽어옴.
+    fetch('list').then(function(response)
+    {
+        response.text().then(function(text)
+        {
+            document.querySelector('#nav').innerHTML = text;
+        })
+    });
 
   </script>
 </body>
