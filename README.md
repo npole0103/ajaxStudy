@@ -82,4 +82,14 @@ response 객체에서 status 값에 200은 정상적인 실행, 404는 파일을
 
 최근엔 hash bang 기술 대신 pjax라는 기술을 쓴다.
 
+[Can I use](caniuse.com) : 어떤 특정 기능이 특정 브라우저에서 지원이 되는지 확인할 수 있는 사이트.
+
+fetch API가 제대로 동작안하는 브라우저는 fetch.js라는 파일을 script 태그에 연결해주면 된다.
+
+XML, JSON 공부해볼 것.
+
+Single Page Application 구현하는 기술 중 pjax라는 기술이 있음. 검색 엔진을 고려한다면 pjax를 공부하자.
+
+Progressive Web Apps : online + offline에서 동작함.
+
 ---
