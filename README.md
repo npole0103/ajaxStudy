@@ -60,6 +60,9 @@ fetch의 구체적 탐구
 2. 함수에 입력 값으로 response 객체를 주면서 실행시킴.
 3. response 객체는 다양한 값들을 받음. body, bodyUsed, headers, status 등등
 
+---
+
+
 ## etc
 
 response 객체에서 status 값에 200은 정상적인 실행, 404는 파일을 찾을 수 없다는 것. 400은 잘못된 요청. 500은 서버 오류. [HTTP 상태 코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
